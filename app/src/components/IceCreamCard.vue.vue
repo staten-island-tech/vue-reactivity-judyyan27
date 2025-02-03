@@ -1,20 +1,18 @@
 <template>
-  <div>
-    <h2>{{ animal.name }}</h2>
-    <img src="animal.image" alt="" />
-  </div>
-</template>
-
-<script setup>
-// Define props that the component will receive
-defineProps({
-  name: String,
-  price: Number,
-  image: String,
-})
-</script>
-
-<style scoped></style>
+    <div class="card">
+      <h2>{{ name }}</h2>
+      <p>Price: ${{ price }}</p>
+      <img :src="image" :alt="name" />
+    </div>
+  </template>
+  
+  <script setup>
+  defineProps({
+    name: String,
+    price: Number,
+    image: String
+  });
+  </script>
 
 <!-- <template>
   <div class="flex flex-wrap gap-4 justify-center">
@@ -40,4 +38,4 @@ const iceCreams = ref([
   { name: "Mint Chip", price: 3.59, image: "https://via.placeholder.com/100?text=Mint+Chip" }
 ]);
 </script>
--->
+

@@ -1,9 +1,9 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+import IceCreamList from '../components/IceCreamList.vue/'
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <IceCreamList />
   </main>
 </template>

@@ -8,5 +8,5 @@ Project Idea: Dessert themed game or customization webpage
 
 -- Top Section contains the header
 -- A section that was the list of flavors, an image, price, and button to add to cone
--- A section that contains the ice cream and a button to remove a scoop, reset, etc
--- A section with the total price and list of flavors
+-- A visual section that contains the ice cream
+-- A section with the total price and list of flavors, clear cart, and remove last item
