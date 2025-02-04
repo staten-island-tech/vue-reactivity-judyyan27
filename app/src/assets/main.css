@@ -7,6 +7,10 @@
   font-weight: normal;
 }
 
+body {
+  background-image: url(/background.png);
+}
+
 a,
 .green {
   text-decoration: none;

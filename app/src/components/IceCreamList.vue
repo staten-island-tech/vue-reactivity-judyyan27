@@ -1,13 +1,13 @@
 <template>
-  <IceCreamCard name="vanilla" price="2.99" image="vanilla.jpg" />
-  <IceCreamCard name="chocolate" price="2.99" image="vanilla.jpg" />
-  <IceCreamCard name="strawberry" price="2.99" image="vanilla.jpg" />
-  <IceCreamCard name="vanilla" price="2.99" image="vanilla.jpg" />
-  <IceCreamCard name="vanilla" price="2.99" image="vanilla.jpg" />
+  <IceCreamCard name="vanilla" price="2.99" />
+  <IceCreamCard name="chocolate" price="2.99" />
+  <IceCreamCard name="strawberry" price="2.99" />
+  <IceCreamCard name="vanilla" price="2.99" />
+  <IceCreamCard name="vanilla" price="2.99" />
 </template>
 
 <script>
-import IceCreamCard from './IceCreamCard.vue'
+import IceCreamCard from '../components/IceCreamCard.vue'
 </script>
 
 <style scoped></style>
