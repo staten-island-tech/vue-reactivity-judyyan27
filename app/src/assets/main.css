@@ -1,5 +1,38 @@
 @import './base.css';
 
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+form,
+button, #activate_random {
+  font-family: "Mochiy Pop One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+}
+
+:root {
+  --h1: 3.815rem;
+  --h2: 2.852rem;
+  --h3: 2.441rem;
+  --h4: 1.953rem;
+  --h5: 1.563rem;
+  --h6: 1.25rem;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;

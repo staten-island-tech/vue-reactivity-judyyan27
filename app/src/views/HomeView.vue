@@ -1,5 +1,5 @@
 <script setup>
-import IceCreamList from '../components/IceCreamList.vue/'
+import IceCreamList from '../components/IceCreamList.vue'
 </script>
 
 <template>
