@@ -30,9 +30,11 @@ defineProps({
 }
 
 .name {
+  font-size: 2rem;
 }
 
 .price {
+  font-size: 2rem;
 }
 
 .image {

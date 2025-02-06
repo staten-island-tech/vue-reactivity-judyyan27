@@ -1,9 +1,9 @@
 <script setup>
-import HomeView from './views/HomeView.vue'
+import IceCreamList from '../components/IceCreamList.vue'
 </script>
 
 <template>
-  <HomeView />
+  <IceCreamList />
 </template>
 
 <style scoped>
