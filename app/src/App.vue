@@ -1,9 +1,9 @@
 <script setup>
-import IceCreamList from '../components/IceCreamList.vue'
+import './components/IceCreamList.vue'
 </script>
 
 <template>
-  <IceCreamList />
+  <main><IceCreamList /></main>
 </template>
 
 <style scoped>

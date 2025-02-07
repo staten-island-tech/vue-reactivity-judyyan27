@@ -1,5 +1,7 @@
-<script setup></script>
+<script setup>
+import './components/IceCreamList.vue'
+</script>
 
 <template>
-  <main></main>
+  <IceCreamList />
 </template>
