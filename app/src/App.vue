@@ -3,7 +3,7 @@ import './components/IceCreamList.vue'
 </script>
 
 <template>
-  <main><IceCreamList /></main>
+  <div><RouterView /></div>
 </template>
 
 <style scoped>
