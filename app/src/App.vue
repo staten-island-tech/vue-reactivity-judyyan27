@@ -1,10 +1,8 @@
-<script setup>
-import './components/IceCreamList.vue'
-</script>
-
 <template>
   <div><RouterView /></div>
 </template>
+
+<script setup></script>
 
 <style scoped>
 header {

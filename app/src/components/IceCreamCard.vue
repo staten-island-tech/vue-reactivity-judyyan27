@@ -3,6 +3,7 @@
     <h2 class="name">{{ name }}</h2>
     <p class="price">Price: ${{ price }}</p>
     <img :src="image" :alt="name" class="image" />
+    <button>Add to Cart</button>
   </div>
 </template>
 
