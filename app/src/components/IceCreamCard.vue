@@ -9,12 +9,14 @@
 </template>
 
 <script setup>
-import cart from '../components/ShoppingCart.vue'
-
-import { ref } from 'vue'
+import { ref, provide } from 'vue'
 
 function addTocart() {
+  /*   console.log(card.name.value, card.price.value)
   cart.push(card.name.value)
+  console.log(cart) */
+  const cart = ref([])
+  provide('cart', cart)
 }
 
 // Button needs to be the child of card and when button is pressed, a function imports the ice cream description to the card -- display the item and add to the total

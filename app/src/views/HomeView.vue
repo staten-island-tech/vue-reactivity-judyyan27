@@ -5,7 +5,7 @@ import ShoppingCart from '@/components/ShoppingCart.vue'
 
 <template>
   <div class="container"><IceCreamList /></div>
-  <ShoppingCart />
+  <div><ShoppingCart /></div>
 </template>
 
 <style scoped>
