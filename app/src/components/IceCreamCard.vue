@@ -9,14 +9,13 @@
 </template>
 
 <script setup>
-import { ref, provide } from 'vue'
+import { reactive, provide } from 'vue'
 
 function addTocart() {
   /*   console.log(card.name.value, card.price.value)
   cart.push(card.name.value)
   console.log(cart) */
-  const cart = ref([])
-  provide('cart', cart)
+  const cart = reactive([])
 }
 
 // Button needs to be the child of card and when button is pressed, a function imports the ice cream description to the card -- display the item and add to the total
@@ -34,7 +33,7 @@ defineProps({
 .card {
   border-radius: 1.5rem;
   border-width: 1rem;
-  width: fit-content;
+  width: 20rem;
   height: fit-content;
   margin: 1rem;
   display: flex;
@@ -54,8 +53,8 @@ defineProps({
 }
 
 .image {
-  height: 40rem;
-  width: 30rem;
+  height: 25rem;
+  width: fit-content;
   object-fit: contain;
   margin: 0.3rem;
 }

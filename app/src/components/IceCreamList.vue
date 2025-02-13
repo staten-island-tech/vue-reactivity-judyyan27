@@ -21,5 +21,7 @@ import IceCreamCard from '../components/IceCreamCard.vue'
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  width: 100rem;
+  height: 80rem;
 }
 </style>
