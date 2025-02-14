@@ -9,9 +9,10 @@
 </template>
 
 <script setup>
-import { reactive, provide } from 'vue'
+import { reactive } from 'vue'
 
 function addTocart() {
+  const item = reactive({card.name.value, })
   /*   console.log(card.name.value, card.price.value)
   cart.push(card.name.value)
   console.log(cart) */
