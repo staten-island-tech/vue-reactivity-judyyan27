@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="header">Ice Cream Store:</h1>
+    <h1 class="header">Ice Cream Store :P</h1>
   </div>
 </template>
 
@@ -8,6 +8,8 @@
 
 <style scoped>
 .header {
+  width: max-content;
+  align-self: center;
   font-size: 7rem;
   color: cornflowerblue;
 }
