@@ -8,6 +8,7 @@
 
 <style scoped>
 .header {
-  font-size: 10rem;
+  font-size: 7rem;
+  color: cornflowerblue;
 }
 </style>

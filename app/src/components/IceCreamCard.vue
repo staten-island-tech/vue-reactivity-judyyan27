@@ -4,33 +4,32 @@
     <p class="price">Price: ${{ price }}</p>
     <img :src="image" :alt="name" class="image" />
     <button @click="addTocart">Add to Cart</button>
-    <slot></slot>
   </div>
 </template>
 
 <script setup>
-import { reactive } from 'vue'
-
-function addTocart() {
-  const item = reactive({card.name.value, })
-  /*   console.log(card.name.value, card.price.value)
-  cart.push(card.name.value)
-  console.log(cart) */
-  const cart = reactive([])
-}
-
-// Button needs to be the child of card and when button is pressed, a function imports the ice cream description to the card -- display the item and add to the total
-
-//Use slots***
-
 defineProps({
   name: String,
   price: Number,
   image: String,
 })
+
+const emit = defineEmits(['addToCart'])
+const addToCart = () => {
+  emit('addToCart', {
+    name: props.name,
+    price: props.price,
+    image: props.image,
+  })
+}
 </script>
 
 <style scoped>
+h2,
+p {
+  color: darkkhaki;
+}
+
 .card {
   border-radius: 1.5rem;
   border-width: 1rem;

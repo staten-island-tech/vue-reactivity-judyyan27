@@ -1,13 +1,22 @@
 <template>
-  <div class="cart">
-    <h2>Shopping Cart of Ice Cream:</h2>
-    <li>{{ cart }}</li>
+  <div>
+    <h2>Cart:</h2>
+    <ul>
+      <li v-for="(item, index) in cart" :key="index">{{ item.name }} - ${{ item.price }}</li>
+    </ul>
   </div>
-  <div></div>
 </template>
 
 <script setup>
-import cart from '../components/IceCreamCard.vue'
+// Store selected items in cart
+const cart = ref([])
+
+// Function to add item to cart
+const handleAddToCart = (item) => {
+  cart.value.push(item)
+  console.log('Cart:', cart.value)
+}
+
 console.log(cart)
 
 defineProps({
@@ -20,5 +29,6 @@ defineProps({
 .cart {
   width: 40rem;
   height: 30rem;
+  background-color: azure;
 }
 </style>

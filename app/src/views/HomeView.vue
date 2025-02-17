@@ -7,10 +7,19 @@ import ShoppingCart from '@/components/ShoppingCart.vue'
 <template>
   <div><ShopHeader /></div>
   <div class="container"><IceCreamList /></div>
-  <div><ShoppingCart /></div>
+  <div class="cart"><ShoppingCart /></div>
 </template>
 
 <style scoped>
+.cart {
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;

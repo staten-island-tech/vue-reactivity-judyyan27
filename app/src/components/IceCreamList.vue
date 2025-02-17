@@ -11,7 +11,7 @@
 </template>
 
 <script setup>
-import IceCreamCard from '../components/IceCreamCard.vue'
+import IceCreamCard from './IceCreamCard.vue'
 </script>
 
 <style scoped>
