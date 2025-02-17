@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h2>Cart:</h2>
+  <div class="cart">
+    <h2>Shopping Cart:</h2>
     <ul>
       <li v-for="(item, index) in cart" :key="index">{{ item.name }} - ${{ item.price }}</li>
     </ul>
@@ -8,20 +8,8 @@
 </template>
 
 <script setup>
-// Store selected items in cart
-const cart = ref([])
-
-// Function to add item to cart
-const handleAddToCart = (item) => {
-  cart.value.push(item)
-  console.log('Cart:', cart.value)
-}
-
-console.log(cart)
-
 defineProps({
-  name: String,
-  price: Number,
+  cart: Array, // Receives cart data from IceCreamList.vue
 })
 </script>
 
