@@ -33,8 +33,8 @@ p {
 .card {
   border-radius: 1.5rem;
   border-width: 1rem;
-  width: 20rem;
-  height: fit-content;
+  width: 25rem;
+  height: 45rem;
   margin: 1rem;
   display: flex;
   flex-direction: column;
