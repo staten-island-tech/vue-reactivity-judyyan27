@@ -5,6 +5,7 @@
     <IceCreamCard name="Strawberry" price="2.00" image="strawberry.png" />
     <IceCreamCard name="Cookies and Cream" price="2.50" image="cookiesncream.png" />
     <IceCreamCard name="Mint Chocolate Chip" price="2.25" image="mintchoco.png" />
+    <IceCreamCard name="Chocolate Chip" price="2.00" image="choco_chip.webp" />
     <IceCreamCard name="Coffee" price="2.25" image="coffee.png" />
     <IceCreamCard name="Neapolitan" price="2.50" image="neo.png" />
   </div>

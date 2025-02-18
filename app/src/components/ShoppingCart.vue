@@ -14,9 +14,9 @@ defineProps({
 </script>
 
 <style scoped>
-.cart {
-  width: 40rem;
-  height: 30rem;
-  background-color: azure;
+h2 {
+  text-align: left;
+  color: blueviolet;
+  font-size: 2.5rem;
 }
 </style>
