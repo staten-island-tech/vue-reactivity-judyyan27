@@ -10,14 +10,14 @@
 <script setup>
 defineProps({
   name: String,
-  price: Number,
+  price: String,
   image: String,
 })
 
 const emit = defineEmits(['addToCart'])
 const addToCart = () => {
   emit('addToCart', {
-    name: name,
+    name: name_,
     price: price,
     image: image,
   })
@@ -43,9 +43,6 @@ button {
   padding: 0.3rem;
   font-size: 1.6rem;
   background-color: transparent;
-  border-style: double;
-  border-width: 0.5rem;
-  border-color: rgb(26, 39, 72);
 }
 
 .name {
