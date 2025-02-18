@@ -11,7 +11,16 @@
 </template>
 
 <script setup>
+import { reactive } from 'vue'
 import IceCreamCard from './IceCreamCard.vue'
+import ShoppingCart from './ShoppingCart.vue'
+
+const cart = reactive([])
+
+const handleAddToCart = (item) => {
+  cart.push(item) // Add item to cart
+  console.log('Cart updated:', cart)
+}
 </script>
 
 <style scoped>
