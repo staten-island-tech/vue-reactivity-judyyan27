@@ -13,25 +13,22 @@ import ShoppingCart from '@/components/ShoppingCart.vue'
 </template>
 
 <style scoped>
-/* ✅ Use Flexbox to align items */
 .container {
   display: flex;
-  justify-content: space-between; /* Pushes cart to the right */
-  align-items: flex-start; /* Aligns cart and cards at the top */
+  justify-content: space-between;
+  align-items: flex-start;
   padding: 1rem;
 }
 
-/* ✅ Ice cream cards stay on the left */
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  width: 70%; /* Take most of the space */
+  width: 70%;
 }
 
-/* ✅ Shopping cart stays on the right */
 .cart {
-  width: 30%; /* Takes up only 25% of the screen */
+  width: 30%;
   height: cover;
   background-color: azure;
   padding: 0.5rem;

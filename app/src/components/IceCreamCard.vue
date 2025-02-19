@@ -13,15 +13,6 @@ defineProps({
   price: String,
   image: String,
 })
-
-const emit = defineEmits(['addToCart'])
-const addToCart = () => {
-  emit('addToCart', {
-    name: name_,
-    price: price,
-    image: image,
-  })
-}
 </script>
 
 <style scoped>
