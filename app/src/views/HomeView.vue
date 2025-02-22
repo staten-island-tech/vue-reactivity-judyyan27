@@ -24,13 +24,13 @@ import ShoppingCart from '@/components/ShoppingCart.vue'
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  width: 70%;
+  width: 80%;
 }
 
 .cart {
-  width: 30%;
-  height: cover;
+  height: 140rem;
   background-color: azure;
+
   padding: 0.5rem;
 }
 </style>
