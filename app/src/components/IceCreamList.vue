@@ -15,12 +15,10 @@
     <div class="cart">
       <h2>Shopping Cart:</h2>
       <h2>---------------</h2>
-      <ul>
-        <li v-for="(item, index) in cart" :key="index">
-          <span> {{ item.name }} - ${{ item.price }} </span>
-          <button @click="deleteItem(index)">Remove Item</button>
-        </li>
-      </ul>
+      <p v-for="(item, index) in cart" :key="index">
+        <span> {{ item.name }} - ${{ item.price }} </span>
+        <button @click="deleteItem(index)">Remove Item</button>
+      </p>
       <h3>Total Cost: ${{ totalPrice.toFixed(2) }}</h3>
     </div>
   </div>
@@ -237,15 +235,16 @@ h3 {
   font-size: 2rem;
 }
 
-ul,
-li {
+p {
+  padding: 0.2rem;
   text-align: left;
-  font-size: 1.5rem;
-  color: rgb(50, 17, 54);
+  font-size: 3rem;
+  color: rgb(54, 17, 23);
 }
 
 .cart {
   height: 140rem;
+  width: 25%;
   background-color: azure;
   padding: 0.5rem;
 }
@@ -261,6 +260,6 @@ li {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  width: 80%;
+  width: 75%;
 }
 </style>
