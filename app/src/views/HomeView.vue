@@ -1,19 +1,18 @@
 <script setup>
 import ShopHeader from '@/components/ShopHeader.vue'
 import IceCreamList from '@/components/IceCreamList.vue'
-import ShoppingCart from '@/components/ShoppingCart.vue'
+// import ShoppingCart from '@/components/ShoppingCart.vue'
 </script>
 
 <template>
   <div><ShopHeader /></div>
-  <div class="container">
-    <div class="cards"><IceCreamList /></div>
-    <div class="cart"><ShoppingCart /></div>
-  </div>
+
+  <div class="cards"><IceCreamList /></div>
+  <!--     <div class="cart"><ShoppingCart /></div> -->
 </template>
 
 <style scoped>
-.container {
+/* .container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -27,10 +26,10 @@ import ShoppingCart from '@/components/ShoppingCart.vue'
   width: 80%;
 }
 
-.cart {
+ .cart {
   height: 140rem;
   background-color: azure;
 
   padding: 0.5rem;
-}
+} */
 </style>
