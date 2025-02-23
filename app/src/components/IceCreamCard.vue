@@ -3,15 +3,16 @@
     <h2 class="name">{{ name }}</h2>
     <p class="price">Price: ${{ price }}</p>
     <img :src="image" :alt="name" class="image" />
-    <button @click="addTocart">Add to Cart</button>
+    <button @click="$emit('AddtoCart', index)">Add to Cart</button>
   </div>
 </template>
 
 <script setup>
 defineProps({
   name: String,
-  price: String,
+  price: Number,
   image: String,
+  index: Number,
 })
 </script>
 
